@@ -1,0 +1,30 @@
+<html>
+    <head>
+       <link rel="stylesheet" type="text/css" href="/styles.9eff0e182e839a971dba.css" />
+    </head>
+    <body>
+        <div>Himanshu</div>
+        <div><img src="/uniware.svg" width="50" height="50"/></div>
+        <script>
+            function loadMainFiles(tagName, attrs, section){
+            var vd = document.createElement(tagName);
+            attrs.forEach(attr => {
+              vd[attr.name] = attr.value;
+            });
+            if(tagName == 'link') {
+              vd.rel = "stylesheet";
+            }
+            document[section].appendChild(vd);
+        }
+        loadMainFiles('script', [{ name: 'src', value: `runtime-es2015.b95404c3b715e3d6c968.js` }, {name: 'type', value: 'module'} ], 'body');
+        loadMainFiles('script', [{ name: 'src', value: `/polyfills-es2015.67440de7256e16fa5d43.js` }, {name: 'type', value: 'module'} ], 'body');
+        loadMainFiles('script', [{ name: 'src', value: `/runtime-es5.f26a3ca86d137fc59cd5.js` }, {name: 'noModule', value: 'true'}, {name: 'defer', value: 'true'} ], 'body');
+        loadMainFiles('script', [{ name: 'src', value: `/polyfills-es5.a0792728ce5392602d15.js` }, {name: 'noModule', value: 'true'}, {name: 'defer', value: 'true'} ], 'body'); 
+        loadMainFiles('script', [{ name: 'src', value: `/main-es5.2f6a7b6df8fd1a005529.js` }, {name: 'type', value: 'module'} ], 'body');
+        loadMainFiles('script', [{ name: 'src', value: `/main-es2015.8291a65da48e3a65a9a1.js` }, {name: 'noModule', value: 'true'}, {name: 'defer', value: 'true'} ], 'body');
+        </script>
+       <!-- <script src="/common-es5.f6cb4e03e050491c1c2b.js"></script>
+        <script src="/main-es5.2f6a7b6df8fd1a005529.js"></script>
+        <script src="/polyfills-es5.a0792728ce5392602d15.js"></script>-->
+    </body>
+</html>
